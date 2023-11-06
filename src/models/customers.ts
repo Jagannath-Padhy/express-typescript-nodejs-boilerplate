@@ -37,6 +37,6 @@ const customerSchema = new Schema<ICustomers>({
   },
 });
 
-const Customers = model<ICustomers>('customers', customerSchema);
+const Customers = model<ICustomers>('Customers', customerSchema);
 
-export { ICustomers, Customers };
+export default Customers;
