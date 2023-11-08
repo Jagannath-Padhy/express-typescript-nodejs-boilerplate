@@ -39,4 +39,4 @@ const customerSchema = new Schema<ICustomers>({
 
 const Customers = model<ICustomers>('Customers', customerSchema);
 
-export default Customers;
+export { Customers, ICustomers };

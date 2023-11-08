@@ -13,15 +13,13 @@ const accountSchema: Schema<IAccount> = new Schema({
   },
   limit: {
     type: Number,
-    required: true,
+    required: true, 
   },
   products: {
     type: [String],
     required: true,
   },
 });
-
-// Create the "accounts" model
 const Account = model<IAccount>('Account', accountSchema);
 
-export default Account;
+export { Account, IAccount };
